@@ -25,6 +25,16 @@ minus.addEventListener('click', function () {
 
 
 // like an individual number and see the number of likes
+let likeBtn = document.getElementById('heart');
+let numLikes = 0;
+let likesList = document.getElementById('list');
+
+heart.addEventListener('click', function () {
+    let listOfLikes = document.createElement('ul');
+    listOfLikes.classList.add('list');
+    listOfLikes.innerText = `${seconds} has been liked  time`;
+    likesList.appendChild(listOfLikes);
+})
 
 
 // pause button - pause counter, disable all buttons, show resume
